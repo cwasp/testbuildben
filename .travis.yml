@@ -1,5 +1,18 @@
-language: c
+sudo: required
+language: cpp
 
 compiler:
   - clang
   - gcc
+
+
+# whitelist
+branches:
+  only:
+    - masters
+
+
+script:
+  mkdir build
+  cd build
+  cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
