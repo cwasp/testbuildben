@@ -12,7 +12,4 @@ branches:
     - master
 
 
-script:
-  mkdir build
-  cd build
-  cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
+script:"mkdir build && cd build && cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make && ./CMakeHelloWorld"
