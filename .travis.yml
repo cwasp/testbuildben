@@ -9,7 +9,7 @@ compiler:
 # whitelist
 branches:
   only:
-    - masters
+    - master
 
 
 script:
