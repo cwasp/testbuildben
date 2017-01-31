@@ -15,4 +15,4 @@ branches:
 script:
  - mkdir build
  - cd build
- - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make && ./CMakeHelloWorlds
+ - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make && ./CMakeHelloWorld
